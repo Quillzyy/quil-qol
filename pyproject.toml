@@ -9,6 +9,11 @@ readme = "README.md"
 python = "^3.10"
 typer = {extras = ["all"], version = "^0.9.0"}
 
+[tool.poetry.scripts]
+quil-qol = "quil_qol.main:app"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.2"
 
 [build-system]
 requires = ["poetry-core"]
